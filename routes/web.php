@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/documents', 'DocumentController@index');
+Route::post('/document', 'DocumentController@create');
+Route::delete('/document/{document}', 'DocumentController@delete');
